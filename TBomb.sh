@@ -119,7 +119,7 @@ do
         echo -e "\e[1;32m   Subscribe Hacking Insiders Youtube Channel"
         sleep 5
         cd $HOME
-        cd Tbomb
+        cd TBomb
         python3 bomber.py
        
         exit
