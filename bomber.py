@@ -115,11 +115,11 @@ def do_zip_update():
         except Exception:
             mesgdcrt.FailureMessage("Error occured while extracting !!")
     if success:
-        mesgdcrt.SuccessMessage("bombattack was updated to the latest version")
+        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update Bombattack.")
+        mesgdcrt.FailureMessage("Unable to update TBomb.")
         mesgdcrt.WarningMessage(
             "Grab The Latest one From https://github.com/TheSpeedX/TBomb.git")
 
@@ -146,11 +146,11 @@ def do_git_update():
     print("\n")
 
     if success:
-        mesgdcrt.SuccessMessage("bombattack was updated to the latest version")
+        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update bombattack.")
+        mesgdcrt.FailureMessage("Unable to update TBomb.")
         mesgdcrt.WarningMessage("Make Sure To Install 'git' ")
         mesgdcrt.GeneralMessage("Then run command:")
         print(
@@ -180,7 +180,7 @@ def check_for_updates():
         mesgdcrt.GeneralMessage("Starting update...")
         update()
     else:
-        mesgdcrt.SuccessMessage("bombattack is up-to-date")
+        mesgdcrt.SuccessMessage("TBomb is up-to-date")
         mesgdcrt.GeneralMessage("Starting bombattack")
 
 
@@ -243,7 +243,7 @@ def pretty_print(cc, target, success, failed):
     mesgdcrt.GeneralMessage("Failed       : " + str(failed))
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
-    mesgdcrt.SuccessMessage("bombattack was created by dhillonsail")
+    mesgdcrt.SuccessMessage("TBomb was created by dhillonsail")
 
 
 def workernode(mode, cc, target, count, delay, max_threads):
@@ -364,7 +364,7 @@ def selectnode(mode="sms"):
 
 mesgdcrt = MessageDecorator("icon")
 if sys.version_info[0] != 3:
-    mesgdcrt.FailureMessage("bombattack will work only in Python v3")
+    mesgdcrt.FailureMessage("TBomb will work only in Python v3")
     sys.exit()
 
 try:
@@ -383,14 +383,14 @@ RESET_ALL = Style.RESET_ALL
 ASCII_MODE = False
 DEBUG_MODE = False
 
-description = """bombattack - Your Friendly Spammer Application
+description = """TBomb - Your Friendly Spammer Application
 
 bombattack can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
 \t Friendly Spamming
 \t Testing Your Spam Detector and more ....
 
-bombattack is not intented for malicious uses.
+TBomb is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
