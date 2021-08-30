@@ -32,14 +32,14 @@ banner() {
         figlet TBomb
     fi
     if ! [ -x "$(command -v toilet)" ]; then
-        echo -e "\e[4;34m This Bomber Was Created By \e[1;32mDhillon Sahil \e[0m"
+        echo -e "\e[4;34m This Bomber Was Modify By \e[1;32mSahil Dhillon \e[0m"
     else
         echo -e "\e[1;34mCreated By \e[1;34m"
-        toilet -f mono12 -F border Dhillon sahil
+        toilet -f mono12 -F border sahil dhillon
     fi
     echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
-    echo -e "\e[1;32m           Telegram: https://t.me/BombattackChat \e[0m"
-    echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/thedarkwebofficial \e[0m"
+    echo -e "\e[1;32m           Telegram: https://t.me/hackinginsiders \e[0m"
+    echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/thedarkwebofficial -At-Yw \e[0m"
     echo " "
     echo "NOTE: Kindly move to the PIP version Of TBomb for more stability."
     echo " "
@@ -115,24 +115,55 @@ do
     read ch
     clear
     if [ $ch -eq 1 ];then
-        $PYTHON bomber.py --sms
+        echo -e "\e[1;34m        wait please"
+        echo -e "\e[1;32m   Subscribe Hacking Insiders Youtube Channel"
+        sleep 5
+        cd $HOME
+        cd Tbomb
+        python3 bomber.py
+       
         exit
     elif [ $ch -eq 2 ];then
-        $PYTHON bomber.py --call
+        echo -e "\e[1;34m          wait please"
+        echo -e "\e[1;32m    Follow Hacking Insiders Instagram Page"
+        sleep 5
+        cd $HOME
+        cd Tbomb
+        python3 bomber.py
+        
+        exit
         exit
     elif [ $ch -eq 3 ];then
-        $PYTHON bomber.py --mail
+         echo -e "\e[1;34m        wait please"
+        echo -e "\e[1;32m   Follow Hacking Insiders Instagram Page"
+         sleep 5
+         cd $HOME
+        git clone https://github.com/ha-mrx/Emailbomb
+         cd Emailbomb
+        chmod +x Emailbomb.py
+        python2 Emailbomb.py
+
         exit
     elif [ $ch -eq 4 ];then
-        echo -e "\e[1;34m Downloading Latest Files..."
-        rm -f .update
-        $PYTHON bomber.py --update
-        echo -e "\e[1;34m RUN BombAttack Again..."
-        pause
-        exit
+        echo -e "\e[1;34m            email bombing comming soon"
+        echo -e "\e[1;32m        Follow Hacking Insiders Instagram Page"
+        sleep 5
+        cd $HOME
+        cd Tbomb
+        bash TBomb.sh
     elif [ $ch -eq 5 ];then
-        banner
+        echo -e "\e[1;34m Downloading Latest Files..."
+        cd $HOME
+        rm -rf Tbomb
+        git clone https://github.com/dhillonsahil/TBomb
+        cd Tbomb
+        bash TBomb.sh
+       
         exit
+    elif [ $ch -eq 6 ];then
+        cd $HOME
+        exit
+        
     else
         echo -e "\e[4;32m Invalid Input !!! \e[0m"
         pause
