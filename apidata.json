@@ -1,10 +1,11 @@
 {
     "contributors": [
         "TheSpeedX",
-        "dhillonsahil"
+        "Sahil Dhillon"."Avinash",
+        "Reiltar"
     ],
     "version": "2.3",
-    "4": {
+    "sms": {
         "91": [
             {
                 "name": "confirmtkt",
