@@ -27,9 +27,9 @@ banner() {
     clear
     echo -e "\e[1;31m"
     if ! [ -x "$(command -v figlet)" ]; then
-        echo 'Introducing BombAttack'
+        echo 'Introducing TBomb'
     else
-        figlet BombAttack
+        figlet TBomb
     fi
     if ! [ -x "$(command -v toilet)" ]; then
         echo -e "\e[4;34m This Bomber Was Created By \e[1;32mDhillon Sahil \e[0m"
@@ -41,7 +41,7 @@ banner() {
     echo -e "\e[1;32m           Telegram: https://t.me/BombattackChat \e[0m"
     echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/thedarkwebofficial \e[0m"
     echo " "
-    echo "NOTE: Kindly move to the PIP version Of BombAttack for more stability."
+    echo "NOTE: Kindly move to the PIP version Of TBomb for more stability."
     echo " "
 }
 
