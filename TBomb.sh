@@ -109,7 +109,7 @@ do
     echo " "
     echo "Press 1 To  Start SMS  Bomber "
     echo "Press 2 To  Start CALL Bomber "
-    echo "Press 3 To  Start MAIL Bomber (Not Yet Available)"
+    echo "Press 3 To  Start MAIL Bomber (Use it From Next step by choosing option 1 or 2)"
     echo "Press 4 To  Update (Works On Linux And Linux Emulators) "
     echo "Press 5 To  Exit "
     read ch
@@ -149,14 +149,14 @@ do
         echo -e "\e[1;32m        Follow Hacking Insiders Instagram Page"
         sleep 5
         cd $HOME
-        cd Tbomb
+        cd TBomb
         bash TBomb.sh
     elif [ $ch -eq 5 ];then
         echo -e "\e[1;34m Downloading Latest Files..."
         cd $HOME
         rm -rf Tbomb
         git clone https://github.com/dhillonsahil/TBomb
-        cd Tbomb
+        cd TBomb
         bash TBomb.sh
        
         exit
